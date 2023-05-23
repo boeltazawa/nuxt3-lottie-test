@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Mac OSX
+.DS_Store
+
+# output
+.vercel_build_output/
+nitro.json
+.vercel/output/
