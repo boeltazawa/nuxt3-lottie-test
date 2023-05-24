@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 require('dotenv').config()
-
+const { MICROCMS_SERVICE_DOMAIN, MICROCMS_API_KEY } = process.env
 export default defineNuxtConfig({
     typescript: {
         strict: true
@@ -31,6 +31,14 @@ export default defineNuxtConfig({
                 { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon-180x180.png' },
             ],
         },
+    },
+    runtimeConfig:{
+        MICROCMS_API_KEY: MICROCMS_API_KEY,
+        MICROCMS_SERVICE_DOMAIN: MICROCMS_SERVICE_DOMAIN,
+        public:{
+            MICROCMS_SERVICE_DOMAIN: process.env.NODE_ENV === 'production' ? undefined : MICROCMS_SERVICE_DOMAIN,
+            MICROCMS_API_KEY: process.env.NODE_ENV === 'production' ? undefined : MICROCMS_API_KEY,
+        }
     },
     hooks: {
         'pages:extend'(pages:any) {
