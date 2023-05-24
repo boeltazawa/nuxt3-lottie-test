@@ -8,6 +8,9 @@ export default defineEventHandler( async (event:any) => {
     const slug = params.slug
     const data = client.getListDetail<News>({
         endpoint: 'projects',
+        queries: {
+            fields: 'subject',
+        },
         contentId: String(slug),
     })
 
