@@ -2,6 +2,16 @@ import { resolve } from 'path'
 require('dotenv').config()
 const { MICROCMS_SERVICE_DOMAIN, MICROCMS_API_KEY } = process.env
 export default defineNuxtConfig({
+    modules: [
+        [
+            'nuxt-microcms-module',
+            {
+            serviceDomain: MICROCMS_SERVICE_DOMAIN, // YOUR_DOMAIN is the XXXX part of XXXX.microcms.io
+            apiKey: MICROCMS_API_KEY,
+            // target: 'server',
+            },
+        ],
+    ],
     typescript: {
         strict: true
     },
