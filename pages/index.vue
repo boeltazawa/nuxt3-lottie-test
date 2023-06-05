@@ -40,18 +40,18 @@ const handleAnimation = (anim: any) => {
 <template>
     <div class="content">
         <LazyHeaderLogo />
-            <p>animationLink</p>
-            <ul>
-                <li v-for="project in data?.subject" :key="project">
-                    {{ project }}
+        <p>animationLink</p>
+        <!-- <ul>
+            <li v-for="project in data?.subject" :key="project">
+                {{ project }}
             </li>
-        </ul>
+        </ul> -->
             
             <!-- <LazyLottie :options="{animationData: data.subject.animationData.url}" :project="true" @animCreated="handleAnimation" class="projects__ttl-anim" /> -->
-        <!-- <template v-if="detail.subject.isTitleAnimation">
+        <template v-if="data?.subject?.isTitleAnimation">
             <p>animationLink</p>
-            <LazyLottie :options="defaultOptions" :project="true" @animCreated="handleAnimation" class="projects__ttl-anim" />
-        </template> -->
+            <LazyLottie :options="{animationData: data.subject.animationData.url}" :project="true" @animCreated="handleAnimation" class="projects__ttl-anim" />
+        </template>
     </div>
 </template>
 <style>
