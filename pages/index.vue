@@ -40,8 +40,8 @@ const handleAnimation = (anim: any) => {
 <template>
     <div class="content">
         <LazyHeaderLogo />
-        <p>animationLink</p>
-        <!-- <ul>
+        <!-- <p>animationLink</p>
+        <ul>
             <li v-for="project in data?.subject" :key="project">
                 {{ project }}
             </li>

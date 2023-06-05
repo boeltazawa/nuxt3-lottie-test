@@ -16,7 +16,6 @@ console.log(animationSource)
 const lavContainer = ref()
 const onAnimLoad =() => {
   console.log('animation Loaded', animationSource)
-  lavContainer.value.stop();
   emit('animCreated', lavContainer.value)
 }
 
