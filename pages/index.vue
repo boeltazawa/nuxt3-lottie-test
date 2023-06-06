@@ -4,7 +4,7 @@ definePageMeta({
     layout: 'page',
 })
 
-const { data: details, error }: any = await useFetch(`/api/detail`, {
+const { data: details, error }: any = await useLazyFetch(`/api/detail`, {
     params: { slug: 'tomamu-wedding' },
 });
 const detail = details._value
