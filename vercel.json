@@ -9,7 +9,7 @@
         },
         {
           "key" : "Content-Security-Policy",
-          "value" : "default-src 'self' cdn.boel.co.jp; font-src 'self' data: typesquare.com wf.typesquare.com use.typekit.net cdn.jsdelivr.net; img-src 'self' data: images.microcms-assets.io www.google-analytics.com cdn.boel.co.jp; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; connect-src 'self' l.typesquare.com files.microcms-assets.io api.boel.co.jp cdn.boel.co.jp identitytoolkit.googleapis.com securetoken.googleapis.com hooks.slack.com firebasestorage.googleapis.com us-central1-develop-form.cloudfunctions.net; frame-src 'self' iframe.videodelivery.net www.google.com;"
+          "value" : "default-src 'self' cdn.boel.co.jp; font-src 'self' data: typesquare.com wf.typesquare.com use.typekit.net cdn.jsdelivr.net; img-src 'self' data: images.microcms-assets.io www.google-analytics.com cdn.boel.co.jp; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; connect-src 'self' l.typesquare.com files.microcms-assets.io api.boel.co.jp cdn.boel.co.jp identitytoolkit.googleapis.com securetoken.googleapis.com hooks.slack.com firebasestorage.googleapis.com us-central1-develop-form.cloudfunctions.net boel.microcms.io; frame-src 'self' iframe.videodelivery.net www.google.com;"
         },
         {
           "key" : "X-Content-Type-Options",
