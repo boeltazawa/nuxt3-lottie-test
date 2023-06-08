@@ -2,6 +2,10 @@ import { resolve } from 'path'
 require('dotenv').config()
 const { MICROCMS_SERVICE_DOMAIN, MICROCMS_API_KEY } = process.env
 export default defineNuxtConfig({
+    routeRules: {
+        // Static page generated on-demand, revalidates in background
+        '/axios': { ssr: false }
+    },
     // modules: [
     //     [
     //         'nuxt-microcms-module',
